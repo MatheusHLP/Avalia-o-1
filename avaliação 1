@@ -1,0 +1,106 @@
+int erros = 0;
+        int acertos = 0;
+
+
+        Console.WriteLine("Welcome to the Quiz");
+        Console.WriteLine("Press <Enter>");
+
+
+        while (Console.ReadKey(true).Key != ConsoleKey.Enter) //enquanto a tecla pressionada for diferente de 'ENTER' o console ira ler o que estiver dentro dos colchetes.
+        {
+
+            Console.WriteLine();
+            Console.WriteLine("Wrong key");
+            Console.WriteLine("Press Enter");
+            Console.WriteLine();
+
+        }
+
+        Console.WriteLine("1.Question");
+        Console.WriteLine();
+        Console.WriteLine("Qual foi o 'GAME OF THE YEAR' de 2018");
+        Console.WriteLine("<A> Celeste , <B> Marvel's spider man , <C> God of War");
+        Console.WriteLine();
+        
+        while (Console.ReadKey(true).Key != ConsoleKey.C)
+        {
+            Console.WriteLine("Resposta errada");
+            Console.WriteLine();
+            erros++;
+
+
+        }
+        acertos++;
+
+        Console.WriteLine("2.Question");
+        Console.WriteLine();
+        Console.WriteLine("Qual foi a primeira bomba atômica jogada no japão?");
+        Console.WriteLine("<A> Hiroshima  , <B> Nagasaki , <C> Hoshirama");
+        Console.WriteLine();
+
+        while (Console.ReadKey(true).Key != ConsoleKey.A)
+        {
+            Console.WriteLine("Resposta errada");
+            Console.WriteLine();
+            erros++;
+        }
+        acertos++;
+
+        Console.WriteLine("3.Question");
+        Console.WriteLine();
+        Console.WriteLine("Quantas casas existem no universo de harry potter? ");
+        Console.WriteLine("<A> 1  , <B> 5 , <C> 4");
+        Console.WriteLine();
+
+        while (Console.ReadKey(true).Key != ConsoleKey.C)
+        {
+            Console.WriteLine("Resposta errada");
+            Console.WriteLine();
+            erros++;
+
+        }
+        acertos++;
+
+        Console.WriteLine("4.Question");
+        Console.WriteLine();
+        Console.WriteLine("programação é difícil? ");
+        Console.WriteLine("<A> sim  , <B> não");
+        Console.WriteLine();
+
+        while (Console.ReadKey(true).Key != ConsoleKey.A)
+        {
+            Console.WriteLine("Resposta errada");
+            Console.WriteLine();
+            erros++;
+
+        }
+        acertos++;
+
+        Console.WriteLine("5.Question");
+        Console.WriteLine();
+        Console.WriteLine("em que ano sera lançado hogwarts legacy? ");
+        Console.WriteLine("<A> 2023  , <B> 2022 , <C> 2024");
+        Console.WriteLine();
+
+        while (Console.ReadKey(true).Key != ConsoleKey.B)
+        {
+            Console.WriteLine("Resposta errada");
+            Console.WriteLine();
+            erros++;
+
+        }
+        acertos++;
+        
+        if (erros > acertos)
+        {
+            Console.WriteLine("erros = " + erros);
+            Console.WriteLine("voce perdeu por ter mais erros do que acertos!");
+        }
+        else
+        {
+            Console.WriteLine("acertos = " + acertos);
+            Console.WriteLine("parabens voce ganhou por ter mais acertos do que erros");
+        }
+        
+        //Console.WriteLine("ERROS = " + erros);
+        //Console.WriteLine("ACERTOS = " + acertos);
